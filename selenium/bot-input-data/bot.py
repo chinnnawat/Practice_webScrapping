@@ -16,18 +16,18 @@ click_login = driver.find_element(By.XPATH, '/html/body/header/div/div/div[2]/di
 click_login.click()
 
 # username and password
-username = "chin3896"
-password = "Chinchin24356"
+username = "your_username"
+password = "your_password"
 
 # input username and password
-time.sleep(1)
+time.sleep(0.1)
 input_username = driver.find_element(By.XPATH, '//*[@id="username"]')
 input_username.send_keys(username)
 
-time.sleep(1)
+time.sleep(0.1)
 input_password = driver.find_element(By.XPATH, '//*[@id="password"]')
 input_password.send_keys(password)
 
-time.sleep(1)
+time.sleep(0.1)
 click_submit = driver.find_element(By.XPATH, '/html/body/main/div/div/form/div[2]/div[3]/div/div/input')
 click_submit.click()
